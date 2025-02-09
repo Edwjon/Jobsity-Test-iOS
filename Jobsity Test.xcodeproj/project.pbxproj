@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		476557832D55A5BD0015E9DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476557642D55A5BC0015E9DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4765576B2D55A5BC0015E9DC;
+			remoteInfo = "Jobsity Test";
+		};
+		4765578D2D55A5BE0015E9DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476557642D55A5BC0015E9DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4765576B2D55A5BC0015E9DC;
+			remoteInfo = "Jobsity Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4765576C2D55A5BC0015E9DC /* Jobsity Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jobsity Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		476557822D55A5BD0015E9DC /* Jobsity TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jobsity TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4765578C2D55A5BE0015E9DC /* Jobsity TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jobsity TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		476557942D55A5BE0015E9DC /* Exceptions for "Jobsity Test" folder in "Jobsity Test" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4765576B2D55A5BC0015E9DC /* Jobsity Test */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4765576E2D55A5BC0015E9DC /* Jobsity Test */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				476557942D55A5BE0015E9DC /* Exceptions for "Jobsity Test" folder in "Jobsity Test" target */,
+			);
+			path = "Jobsity Test";
+			sourceTree = "<group>";
+		};
+		476557852D55A5BE0015E9DC /* Jobsity TestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Jobsity TestTests";
+			sourceTree = "<group>";
+		};
+		4765578F2D55A5BE0015E9DC /* Jobsity TestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Jobsity TestUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476557692D55A5BC0015E9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4765577F2D55A5BD0015E9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476557892D55A5BE0015E9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		476557632D55A5BC0015E9DC = {
+			isa = PBXGroup;
+			children = (
+				4765576E2D55A5BC0015E9DC /* Jobsity Test */,
+				476557852D55A5BE0015E9DC /* Jobsity TestTests */,
+				4765578F2D55A5BE0015E9DC /* Jobsity TestUITests */,
+				4765576D2D55A5BC0015E9DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4765576D2D55A5BC0015E9DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4765576C2D55A5BC0015E9DC /* Jobsity Test.app */,
+				476557822D55A5BD0015E9DC /* Jobsity TestTests.xctest */,
+				4765578C2D55A5BE0015E9DC /* Jobsity TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4765576B2D55A5BC0015E9DC /* Jobsity Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476557952D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity Test" */;
+			buildPhases = (
+				476557682D55A5BC0015E9DC /* Sources */,
+				476557692D55A5BC0015E9DC /* Frameworks */,
+				4765576A2D55A5BC0015E9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4765576E2D55A5BC0015E9DC /* Jobsity Test */,
+			);
+			name = "Jobsity Test";
+			packageProductDependencies = (
+			);
+			productName = "Jobsity Test";
+			productReference = 4765576C2D55A5BC0015E9DC /* Jobsity Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		476557812D55A5BD0015E9DC /* Jobsity TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4765579A2D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity TestTests" */;
+			buildPhases = (
+				4765577E2D55A5BD0015E9DC /* Sources */,
+				4765577F2D55A5BD0015E9DC /* Frameworks */,
+				476557802D55A5BD0015E9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476557842D55A5BD0015E9DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				476557852D55A5BE0015E9DC /* Jobsity TestTests */,
+			);
+			name = "Jobsity TestTests";
+			packageProductDependencies = (
+			);
+			productName = "Jobsity TestTests";
+			productReference = 476557822D55A5BD0015E9DC /* Jobsity TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4765578B2D55A5BE0015E9DC /* Jobsity TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4765579D2D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity TestUITests" */;
+			buildPhases = (
+				476557882D55A5BE0015E9DC /* Sources */,
+				476557892D55A5BE0015E9DC /* Frameworks */,
+				4765578A2D55A5BE0015E9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4765578E2D55A5BE0015E9DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4765578F2D55A5BE0015E9DC /* Jobsity TestUITests */,
+			);
+			name = "Jobsity TestUITests";
+			packageProductDependencies = (
+			);
+			productName = "Jobsity TestUITests";
+			productReference = 4765578C2D55A5BE0015E9DC /* Jobsity TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		476557642D55A5BC0015E9DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4765576B2D55A5BC0015E9DC = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					476557812D55A5BD0015E9DC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4765576B2D55A5BC0015E9DC;
+					};
+					4765578B2D55A5BE0015E9DC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4765576B2D55A5BC0015E9DC;
+					};
+				};
+			};
+			buildConfigurationList = 476557672D55A5BC0015E9DC /* Build configuration list for PBXProject "Jobsity Test" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 476557632D55A5BC0015E9DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4765576D2D55A5BC0015E9DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4765576B2D55A5BC0015E9DC /* Jobsity Test */,
+				476557812D55A5BD0015E9DC /* Jobsity TestTests */,
+				4765578B2D55A5BE0015E9DC /* Jobsity TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4765576A2D55A5BC0015E9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476557802D55A5BD0015E9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4765578A2D55A5BE0015E9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		476557682D55A5BC0015E9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4765577E2D55A5BD0015E9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476557882D55A5BE0015E9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		476557842D55A5BD0015E9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4765576B2D55A5BC0015E9DC /* Jobsity Test */;
+			targetProxy = 476557832D55A5BD0015E9DC /* PBXContainerItemProxy */;
+		};
+		4765578E2D55A5BE0015E9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4765576B2D55A5BC0015E9DC /* Jobsity Test */;
+			targetProxy = 4765578D2D55A5BE0015E9DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		476557962D55A5BE0015E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jobsity Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		476557972D55A5BE0015E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jobsity Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		476557982D55A5BE0015E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		476557992D55A5BE0015E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4765579B2D55A5BE0015E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobsity Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jobsity Test";
+			};
+			name = Debug;
+		};
+		4765579C2D55A5BE0015E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobsity Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jobsity Test";
+			};
+			name = Release;
+		};
+		4765579E2D55A5BE0015E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jobsity Test";
+			};
+			name = Debug;
+		};
+		4765579F2D55A5BE0015E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Jobsity-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jobsity Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476557672D55A5BC0015E9DC /* Build configuration list for PBXProject "Jobsity Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476557982D55A5BE0015E9DC /* Debug */,
+				476557992D55A5BE0015E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476557952D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476557962D55A5BE0015E9DC /* Debug */,
+				476557972D55A5BE0015E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4765579A2D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4765579B2D55A5BE0015E9DC /* Debug */,
+				4765579C2D55A5BE0015E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4765579D2D55A5BE0015E9DC /* Build configuration list for PBXNativeTarget "Jobsity TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4765579E2D55A5BE0015E9DC /* Debug */,
+				4765579F2D55A5BE0015E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 476557642D55A5BC0015E9DC /* Project object */;
+}
