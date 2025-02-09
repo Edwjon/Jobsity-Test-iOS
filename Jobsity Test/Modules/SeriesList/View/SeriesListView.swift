@@ -1,10 +1,3 @@
-//
-//  SeriesListView.swift.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/6/25.
-//
-
 import UIKit
 
 protocol SeriesListViewProtocol: AnyObject {
@@ -29,6 +22,20 @@ class SeriesListView: UIViewController, SeriesListViewProtocol, UISearchBarDeleg
         presenter = SeriesListPresenter(view: self, interactor: interactor, router: router)
         
         presenter.loadMoreSeries()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "star.fill"),
+            style: .plain,
+            target: self,
+            action: #selector(openFavorites)
+        )
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "person.fill"),
+            style: .plain,
+            target: self,
+            action: #selector(openPeopleSearch)
+        )
     }
     
     func setupSearchBar() {
@@ -71,6 +78,14 @@ class SeriesListView: UIViewController, SeriesListViewProtocol, UISearchBarDeleg
             isSearching = true
             presenter.searchSeries(query: searchText)
         }
+    }
+    
+    @objc private func openFavorites() {
+        presenter.showFavorites()
+    }
+    
+    @objc func openPeopleSearch() {
+        presenter.showPeopleSearch()
     }
 }
 

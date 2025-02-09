@@ -1,27 +1,21 @@
-//
-//  AuthenticationRouter.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 import UIKit
 
-// MARK: - AuthenticationRouterProtocol
 protocol AuthenticationRouterProtocol {
-    func navigateToSeriesListView(from view: UIViewController)
-    func navigateToPinSetup(from view: UIViewController)
+    func navigateToSeriesListView(from view: AuthenticationViewProtocol)
+    func navigateToPinSetup(from view: AuthenticationViewProtocol)
 }
 
 class AuthenticationRouter: AuthenticationRouterProtocol {
-    func navigateToSeriesListView(from view: UIViewController) {
+    func navigateToSeriesListView(from view: AuthenticationViewProtocol) {
+        guard let viewController = view as? UIViewController else { return }
         let seriesListView = SeriesListView()
-        view.navigationController?.setViewControllers([seriesListView], animated: true)
+        viewController.navigationController?.setViewControllers([seriesListView], animated: true)
     }
-    
-    func navigateToPinSetup(from view: UIViewController) {
+
+    func navigateToPinSetup(from view: AuthenticationViewProtocol) {
+        guard let viewController = view as? UIViewController else { return }
         let pinSetupView = PinSetupView()
-        view.navigationController?.setViewControllers([pinSetupView], animated: true)
+        viewController.navigationController?.setViewControllers([pinSetupView], animated: true)
     }
 }

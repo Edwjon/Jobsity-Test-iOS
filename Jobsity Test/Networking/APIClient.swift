@@ -1,20 +1,18 @@
-//
-//  APIClient.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/6/25.
-//
-
 import UIKit
 
 protocol APIService {
     func fetchSeries(page: Int, completion: @escaping (Result<[Series], Error>) -> Void)
     func searchSeries(query: String, completion: @escaping (Result<[Series], Error>) -> Void)
     func fetchEpisodes(for seriesId: Int, completion: @escaping (Result<[Episode], Error>) -> Void)
+    func searchPeople(query: String, completion: @escaping (Result<[Person], Error>) -> Void)
 }
 
 struct SearchResult: Codable {
     let show: Series
+}
+
+struct SearchPeopleResult: Codable {
+    let person: Person
 }
 
 class APIClient: APIService {
@@ -38,6 +36,21 @@ class APIClient: APIService {
     
     func fetchEpisodes(for seriesId: Int, completion: @escaping (Result<[Episode], Error>) -> Void) {
         fetch(endpoint: "/shows/\(seriesId)/episodes", completion: completion)
+    }
+    
+    func searchPeople(query: String, completion: @escaping (Result<[Person], Error>) -> Void) {
+        let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        let endpoint = "/search/people?q=\(encodedQuery)"
+        
+        fetch(endpoint: endpoint) { (result: Result<[SearchPeopleResult], Error>) in
+            switch result {
+            case .success(let results):
+                let people = results.map { $0.person }
+                completion(.success(people))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
     
     private func fetch<T: Decodable>(endpoint: String, completion: @escaping (Result<T, Error>) -> Void) {

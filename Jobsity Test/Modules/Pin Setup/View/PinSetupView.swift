@@ -1,14 +1,6 @@
-//
-//  AuthenticationView.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 import UIKit
 
-// MARK: - PinSetupViewProtocol
 protocol PinSetupViewProtocol: AnyObject {
     func showError(_ message: String)
     func showSuccess()

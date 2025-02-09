@@ -1,10 +1,3 @@
-//
-//  SeriesDetailInteractor.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/7/25.
-//
-
 import UIKit
 
 protocol SeriesDetailInteractorProtocol {

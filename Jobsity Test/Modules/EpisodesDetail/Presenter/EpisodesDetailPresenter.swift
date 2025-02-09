@@ -1,13 +1,5 @@
-//
-//  AuthenticationPresenter.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 
-// MARK: - EpisodeDetailPresenter
 protocol EpisodeDetailPresenterProtocol {
     func loadEpisodeDetails()
 }

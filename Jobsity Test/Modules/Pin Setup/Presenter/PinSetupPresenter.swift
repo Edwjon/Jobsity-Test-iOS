@@ -1,13 +1,5 @@
-//
-//  AuthenticationPresenter.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 
-// MARK: - PinSetupPresenterProtocol
 protocol PinSetupPresenterProtocol {
     func savePIN(_ pin: String, confirmPin: String)
 }

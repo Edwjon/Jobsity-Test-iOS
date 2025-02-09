@@ -1,16 +1,11 @@
-//
-//  SeriesListPresenter.swift.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/6/25.
-//
-
 import UIKit
 
 protocol SeriesListPresenterProtocol {
     func loadMoreSeries()
     func searchSeries(query: String)
     func showSeriesDetails(_ series: Series)
+    func showFavorites()
+    func showPeopleSearch()
 }
 
 class SeriesListPresenter: SeriesListPresenterProtocol {
@@ -54,5 +49,13 @@ class SeriesListPresenter: SeriesListPresenterProtocol {
     
     func showSeriesDetails(_ series: Series) {
         router.navigateToSeriesDetail(series: series)
+    }
+    
+    func showPeopleSearch() {
+        router.navigateToPeopleSearch()
+    }
+    
+    func showFavorites() {
+        router.navigateToFavorites()
     }
 }

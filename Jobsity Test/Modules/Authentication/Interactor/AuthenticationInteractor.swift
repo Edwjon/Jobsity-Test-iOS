@@ -1,13 +1,5 @@
-//
-//  AuthenticationInteractor.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 
-// MARK: - AuthenticationInteractorProtocol
 protocol AuthenticationInteractorProtocol {
     func verifyPIN(_ pin: String) -> Bool
     func isPinSet() -> Bool

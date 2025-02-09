@@ -1,13 +1,5 @@
-//
-//  AuthenticationInteractor.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 
-// MARK: - PinSetupInteractorProtocol
 protocol PinSetupInteractorProtocol {
     func savePIN(_ pin: String)
 }

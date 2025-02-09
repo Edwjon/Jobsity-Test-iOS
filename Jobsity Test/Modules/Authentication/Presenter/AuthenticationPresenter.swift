@@ -1,14 +1,6 @@
-//
-//  AuthenticationPresenter.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 import UIKit
 
-// MARK: - AuthenticationPresenterProtocol
 protocol AuthenticationPresenterProtocol {
     func authenticateUser(with pin: String)
     func navigateToPinSetup()
@@ -28,7 +20,9 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
     
     func authenticateUser(with pin: String) {
         if interactor.verifyPIN(pin) {
-            router.navigateToSeriesListView(from: view as! UIViewController)
+            if let viewController = view as? UIViewController {
+                router.navigateToSeriesListView(from: viewController as! AuthenticationViewProtocol)
+            }
         } else {
             view?.showError("Incorrect PIN")
         }
@@ -39,6 +33,6 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
     }
     
     func navigateToPinSetup() {
-        router.navigateToPinSetup(from: view as! UIViewController)
+        router.navigateToPinSetup(from: view as! UIViewController as! AuthenticationViewProtocol)
     }
 }

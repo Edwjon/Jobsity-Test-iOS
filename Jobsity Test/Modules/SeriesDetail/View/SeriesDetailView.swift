@@ -1,10 +1,3 @@
-//
-//  SeriesDetailView.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/6/25.
-//
-
 import UIKit
 
 protocol SeriesDetailViewProtocol: AnyObject {
@@ -19,8 +12,9 @@ class SeriesDetailView: UIViewController, SeriesDetailViewProtocol {
     private let contentView = UIView()
     private var episodesCollectionView: UICollectionView!
     private let summaryLabel = UILabel()
-    private var favoriteButton = UIButton()
     private var router: SeriesDetailRouterProtocol!
+    
+    weak var favoritesDelegate: FavoritesListViewDelegate?
     
     init(series: Series) {
         self.series = series
@@ -40,6 +34,14 @@ class SeriesDetailView: UIViewController, SeriesDetailViewProtocol {
         title = series.name
         setupHeader()
         presenter.loadEpisodes()
+        
+        let isFavorite = FavoritesManager.shared.isFavorite(seriesId: series.id)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: isFavorite ? "star.fill" : "star"),
+            style: .plain,
+            target: self,
+            action: #selector(toggleFavorite)
+        )
     }
     
     private func setupHeader() {
@@ -88,18 +90,12 @@ class SeriesDetailView: UIViewController, SeriesDetailViewProtocol {
         episodesCollectionView.backgroundColor = .white
         episodesCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
-        favoriteButton = UIButton(type: .system)
-        favoriteButton.setTitle(FavoritesManager.shared.isFavorite(seriesId: series.id) ? "★ Remove Favorite" : "☆ Add Favorite", for: .normal)
-        favoriteButton.addTarget(self, action: #selector(toggleFavorite), for: .touchUpInside)
-        favoriteButton.translatesAutoresizingMaskIntoConstraints = false
-        
         view.addSubview(imageView)
         view.addSubview(nameLabel)
         view.addSubview(genresLabel)
         view.addSubview(scheduleLabel)
         view.addSubview(summaryLabel)
         view.addSubview(episodesCollectionView)
-        view.addSubview(favoriteButton)
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -125,9 +121,6 @@ class SeriesDetailView: UIViewController, SeriesDetailViewProtocol {
             episodesCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             episodesCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             episodesCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
-            
-            favoriteButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            favoriteButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
     }
     
@@ -141,14 +134,17 @@ class SeriesDetailView: UIViewController, SeriesDetailViewProtocol {
     }
     
     @objc private func toggleFavorite() {
-            if FavoritesManager.shared.isFavorite(seriesId: series.id) {
-                FavoritesManager.shared.removeFavorite(seriesId: series.id)
-                favoriteButton.setTitle("☆ Add Favorite", for: .normal)
-            } else {
-                FavoritesManager.shared.addFavorite(seriesId: series.id)
-                favoriteButton.setTitle("★ Remove Favorite", for: .normal)
-            }
+        if FavoritesManager.shared.isFavorite(seriesId: series.id) {
+            FavoritesManager.shared.removeFavorite(seriesId: series.id)
+        } else {
+            FavoritesManager.shared.addFavorite(series: series)
         }
+        
+        favoritesDelegate?.didUpdateFavorites()
+        
+        let isFavorite = FavoritesManager.shared.isFavorite(seriesId: series.id)
+        navigationItem.rightBarButtonItem?.image = UIImage(systemName: isFavorite ? "star.fill" : "star")
+    }
 }
 
 

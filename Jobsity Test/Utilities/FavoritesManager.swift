@@ -1,41 +1,40 @@
-//
-//  FavoritesManager.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 
 class FavoritesManager {
-    private let favoritesKey = "favoriteSeries"
     static let shared = FavoritesManager()
+    private let favoritesKey = "favorite_series"
     
     private init() {}
-    
-    func getFavorites() -> [Int] {
-        return UserDefaults.standard.array(forKey: favoritesKey) as? [Int] ?? []
+
+    func getAllFavorites() -> [Series] {
+        guard let data = UserDefaults.standard.data(forKey: favoritesKey),
+              let series = try? JSONDecoder().decode([Series].self, from: data) else {
+            return []
+        }
+        return series
     }
-    
-    func addFavorite(seriesId: Int) {
-        var favorites = getFavorites()
-        if !favorites.contains(seriesId) {
-            favorites.append(seriesId)
+
+    func addFavorite(series: Series) {
+        var favorites = getAllFavorites()
+        if !favorites.contains(where: { $0.id == series.id }) {
+            favorites.append(series)
             saveFavorites(favorites)
         }
     }
-    
+
     func removeFavorite(seriesId: Int) {
-        var favorites = getFavorites()
-        favorites.removeAll { $0 == seriesId }
+        var favorites = getAllFavorites()
+        favorites.removeAll { $0.id == seriesId }
         saveFavorites(favorites)
     }
-    
+
     func isFavorite(seriesId: Int) -> Bool {
-        return getFavorites().contains(seriesId)
+        return getAllFavorites().contains { $0.id == seriesId }
     }
-    
-    private func saveFavorites(_ favorites: [Int]) {
-        UserDefaults.standard.set(favorites, forKey: favoritesKey)
+
+    private func saveFavorites(_ series: [Series]) {
+        if let data = try? JSONEncoder().encode(series) {
+            UserDefaults.standard.set(data, forKey: favoritesKey)
+        }
     }
 }

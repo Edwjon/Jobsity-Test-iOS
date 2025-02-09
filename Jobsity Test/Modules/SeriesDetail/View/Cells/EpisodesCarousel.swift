@@ -1,10 +1,3 @@
-//
-//  EpisodesCarousel.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 import UIKit
 

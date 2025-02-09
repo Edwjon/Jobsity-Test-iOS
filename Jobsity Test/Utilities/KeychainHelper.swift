@@ -1,10 +1,3 @@
-//
-//  KeychainHelper.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Security
 import Foundation
 

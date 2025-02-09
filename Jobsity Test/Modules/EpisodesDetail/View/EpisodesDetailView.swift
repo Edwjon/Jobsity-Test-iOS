@@ -1,10 +1,3 @@
-//
-//  AuthenticationView.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/8/25.
-//
-
 import Foundation
 import UIKit
 
@@ -12,7 +5,6 @@ protocol EpisodeDetailViewProtocol: AnyObject {
     func showEpisodeDetails(_ episode: Episode)
 }
 
-// MARK: - EpisodeDetailView
 class EpisodeDetailView: UIViewController, EpisodeDetailViewProtocol {
     private let episode: Episode
     private var presenter: EpisodeDetailPresenterProtocol!

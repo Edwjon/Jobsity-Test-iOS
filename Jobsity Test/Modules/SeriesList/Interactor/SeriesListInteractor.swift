@@ -1,10 +1,3 @@
-//
-//  SeriesListInteractor.swift.swift
-//  Jobsity Test
-//
-//  Created by Edward Pizzurro on 2/6/25.
-//
-
 import UIKit
 
 protocol SeriesListInteractorProtocol {
