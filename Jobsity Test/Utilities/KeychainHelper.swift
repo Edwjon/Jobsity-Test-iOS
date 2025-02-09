@@ -20,10 +20,7 @@ class KeychainHelper {
             kSecValueData as String: data
         ]
         
-        // Elimina cualquier valor existente antes de guardarlo
         SecItemDelete(query as CFDictionary)
-        
-        // Guarda el nuevo valor
         SecItemAdd(query as CFDictionary, nil)
     }
 
