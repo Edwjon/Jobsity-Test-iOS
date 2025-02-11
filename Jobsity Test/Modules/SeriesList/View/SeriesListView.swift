@@ -51,7 +51,7 @@ class SeriesListView: UIViewController, SeriesListViewProtocol, UISearchBarDeleg
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
-        layout.itemSize = CGSize(width: (view.frame.width / 2) - 20, height: 250)
+        layout.itemSize = CGSize(width: (view.frame.width / 2) - 20, height: 350)
 
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collectionView.delegate = self

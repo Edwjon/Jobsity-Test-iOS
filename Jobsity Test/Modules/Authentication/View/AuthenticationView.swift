@@ -6,7 +6,7 @@ protocol AuthenticationViewProtocol: AnyObject {
 }
 
 class AuthenticationView: UIViewController {
-    private var presenter: AuthenticationPresenterProtocol!
+    var presenter: AuthenticationPresenterProtocol!
     private let titleLabel = UILabel()
     private let pinTextField = UITextField()
     private let authenticateButton = UIButton()

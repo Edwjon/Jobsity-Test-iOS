@@ -7,7 +7,7 @@ protocol PinSetupViewProtocol: AnyObject {
 }
 
 class PinSetupView: UIViewController {
-    private var presenter: PinSetupPresenterProtocol!
+    var presenter: PinSetupPresenterProtocol!
     private let titleLabel = UILabel()
     private let pinTextField = UITextField()
     private let confirmPinTextField = UITextField()

@@ -43,6 +43,8 @@ class SeriesCell: UICollectionViewCell {
         titleLabel.numberOfLines = 2
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.isHidden = true
+        titleLabel.minimumScaleFactor = 0.1
+        titleLabel.adjustsFontSizeToFitWidth = true
         
         skeletonView.backgroundColor = UIColor(white: 0.85, alpha: 1)
         skeletonView.layer.cornerRadius = 12

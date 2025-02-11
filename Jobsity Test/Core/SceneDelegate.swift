@@ -15,10 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let viewController = AuthenticationView()
-        let navigation = UINavigationController(rootViewController: viewController)
-        window?.rootViewController = navigation
-        window?.makeKeyAndVisible()
+
+        AppRouter.setInitialViewController(window: window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -51,4 +49,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

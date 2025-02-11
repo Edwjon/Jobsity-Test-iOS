@@ -44,6 +44,7 @@ class EpisodesCarouselCell: UICollectionViewCell {
         collectionView.register(SeriesCell.self, forCellWithReuseIdentifier: "SeriesCell")
         collectionView.backgroundColor = .white
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.showsHorizontalScrollIndicator = false
         
         contentView.addSubview(titleLabel)
         contentView.addSubview(collectionView)
